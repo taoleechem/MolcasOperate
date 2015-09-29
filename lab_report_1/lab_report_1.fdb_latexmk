@@ -1,0 +1,14 @@
+# Fdb version 3
+["pdflatex"] 1443524944 "lab_report_1.tex" "lab_report_1.pdf" "lab_report_1" 1443524944
+  "/etc/texmf/web2c/texmf.cnf" 1401278750 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1254151887 20571 b8bd218bf2e18b4f5817ee643cd9c515 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1254151887 9042 248dfba326a1b8733d6bb8e0a3ac1e49 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1443516267 3822874 22a65b013d7d780350ee63acb38b4a1b ""
+  "lab_report_1.aux" 1443524944 8 a94a2480d3289e625eea47cd1b285758 ""
+  "lab_report_1.tex" 1443524944 7709 f83ccc515b7c8da8f2d04eb16522489a ""
+  "mhchem.sty" 0 -1 0 ""
+  (generated)
+  "lab_report_1.pdf"
+  "lab_report_1.log"
