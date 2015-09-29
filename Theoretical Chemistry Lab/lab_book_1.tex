@@ -1,0 +1,128 @@
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[idxtotoc,hyperref,openany]{labbook} % 'openany' here removes the gap page between days, erase it to restore this gap; 'oneside' can also be added to remove the shift that odd pages have to the right for easier reading
+
+\usepackage[ 
+  backref=page,
+  pdfpagelabels=true,
+  plainpages=false,
+  colorlinks=true,
+  bookmarks=true,
+  pdfview=FitB]{hyperref} % Required for the hyperlinks within the PDF
+  
+\usepackage{booktabs} % Required for the top and bottom rules in the table
+\usepackage{float} % Required for specifying the exact location of a figure or table
+\usepackage{graphicx} % Required for including images
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Command to make the lines in the title page
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+%	DEFINITION OF EXPERIMENTS
+%----------------------------------------------------------------------------------------
+
+\newexperiment{example}{This is an example experiment}
+\newexperiment{example2}{This is another example experiment}
+\newexperiment{example3}{This is yet another example experiment}
+\newexperiment{table}{This shows a sample table}
+%\newexperiment{shorthand}{Description of the experiment}
+
+%---------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\frontmatter % Use Roman numerals for page numbers
+\title{
+\begin{center}
+\HRule \\[0.4cm]
+{\Huge \bfseries UU Laboratory Journal \\[0.5cm] \Large Visiting Student}\\[0.4cm] % Degree
+\HRule \\[1.5cm]
+\end{center}
+}
+\author{\Huge Tao Li \\ \\ \LARGE taoleechem@outlook.com \\[2cm]} % Your name and email address
+\date{Beginning 20 August 2015} % Beginning date
+\maketitle
+
+\tableofcontents
+
+\mainmatter % Use Arabic numerals for page numbers
+
+%----------------------------------------------------------------------------------------
+%	LAB BOOK CONTENTS
+%----------------------------------------------------------------------------------------
+
+% Blank template to use for new days:
+
+%\labday{Day, Date Month Year}
+
+%\experiment{}
+
+%Text
+
+%-----------------------------------------
+
+%\experiment{}
+
+%Text
+
+%----------------------------------------------------------------------------------------
+\labday{September Review}
+
+\experiment{Research Topic}
+
+From September, I began to do some research in Roland's group with \textit{Molcas 8.0} software and multiconfigurational theory.\par
+
+The first thing I do is to reproduce the result of Figure 1 in the paper \textit{Chemiluminescence of 1, 2-dioxetane. reaction mechanism uncovered}.\cite{de2007chemiluminescence}
+
+\bibliographystyle{plain}
+\bibliography{lab_book_1}
+%---------------------------------------
+\labday{Format Style}
+
+\experiment{Format Style}
+
+\begin{figure}[H] % Example of including images
+\begin{center}
+\includegraphics[width=0.5\linewidth]{example_figure}
+\end{center}
+\caption{Example figure.}
+\label{fig:example_figure}
+\end{figure}
+
+
+\begin{table}[H]
+\begin{tabular}{l l l}
+\toprule
+\textbf{Groups} & \textbf{Treatment X} & \textbf{Treatment Y} \\
+\toprule
+1 & 0.2 & 0.8\\
+2 & 0.17 & 0.7\\
+3 & 0.24 & 0.75\\
+4 & 0.68 & 0.3\\
+\bottomrule
+\end{tabular}
+\caption{The effects of treatments X and Y on the four groups studied.}
+\label{tab:treatments_xy}
+\end{table}
+Table \ref{tab:treatments_xy} shows that groups 1-3 reacted similarly to the two treatments but group 4 showed a reversed reaction.
+
+This is a bulleted list:
+
+\begin{itemize}
+\item Item 1
+\item Item 2
+\item \ldots and so on
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
