@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.9.20)  1 OCT 2015 04:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.9.20)  2 OCT 2015 19:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -607,8 +607,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip72
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count200
-)
-No file Report2.aux.
+) (./Report2.aux)
 \openout1 = `Report2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -623,6 +622,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -784,8 +784,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
 [2 <./pic1.png> <./pic2.png>] [3] (./Report2.aux) ) 
 Here is how much of TeX's memory you used:
- 14181 strings out of 493091
- 291394 string characters out of 6138531
+ 14183 strings out of 493091
+ 291418 string characters out of 6138531
  324680 words of memory out of 5000000
  17563 multiletter control sequences out of 15000+600000
  11530 words of font info for 44 fonts, out of 8000000 for 9000
