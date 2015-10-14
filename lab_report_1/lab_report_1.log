@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.29)  1 OCT 2015 11:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.29)  14 OCT 2015 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -557,7 +557,28 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip75
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count154
-) (./lab_report_1.aux)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen169
+\lightrulewidth=\dimen170
+\cmidrulewidth=\dimen171
+\belowrulesep=\dimen172
+\belowbottomsep=\dimen173
+\aboverulesep=\dimen174
+\abovetopsep=\dimen175
+\cmidrulesep=\dimen176
+\cmidrulekern=\dimen177
+\defaultaddspace=\dimen178
+\@cmidla=\count155
+\@cmidlb=\count156
+\@aboverulesep=\dimen179
+\@belowrulesep=\dimen180
+\@thisruleclass=\count157
+\@lastruleclass=\count158
+\@thisrulewidth=\dimen181
+)
+(./lab_report_1.aux)
 \openout1 = `lab_report_1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -609,16 +630,16 @@ LaTeX Font Info:    ... okay on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count155
-\scratchdimen=\dimen169
+\scratchcounter=\count159
+\scratchdimen=\dimen182
 \scratchbox=\box50
-\nofMPsegments=\count156
-\nofMParguments=\count157
+\nofMPsegments=\count160
+\nofMParguments=\count161
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count158
-\MPscratchDim=\dimen170
-\MPnumerator=\count159
-\makeMPintoPDFobject=\count160
+\MPscratchCnt=\count162
+\MPscratchDim=\dimen183
+\MPnumerator=\count163
+\makeMPintoPDFobject=\count164
 \everyMPtoPDFconversion=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -659,36 +680,105 @@ Dictionary: translator-basic-dictionary, Language: English
 fg
 File: siunitx-abbreviations.cfg 2013/07/31 v2.5s siunitx: Abbreviated units
 )
-\c__siunitx_mathsf_int=\count161
-\c__siunitx_mathtt_int=\count162
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
- [1
+\c__siunitx_mathsf_int=\count165
+\c__siunitx_mathtt_int=\count166
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lab_report_1.aux) ) 
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 72.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ± in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+<result1.png, id=16, 583.17876pt x 270.00874pt>
+File: result1.png Graphic file (type png)
+ <use result1.png>
+Package pdftex.def Info: result1.png used on input line 119.
+(pdftex.def)             Requested size: 284.52756pt x 131.73688pt.
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+
+ []
+
+[3 <./result1.png>] (./lab_report_1.aux) ) 
 Here is how much of TeX's memory you used:
- 11296 strings out of 493304
- 237362 string characters out of 6139871
- 264804 words of memory out of 5000000
- 14607 multiletter control sequences out of 15000+600000
+ 11344 strings out of 493304
+ 237922 string characters out of 6139871
+ 269569 words of memory out of 5000000
+ 14652 multiletter control sequences out of 15000+600000
  11530 words of font info for 44 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 39i,6n,35p,10440b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
-</us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on lab_report_1.pdf (1 page, 63626 bytes).
+ 39i,7n,35p,10440b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on lab_report_1.pdf (3 pages, 138012 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

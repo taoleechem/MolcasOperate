@@ -11,7 +11,7 @@
 \usepackage{graphicx} % Required for the inclusion of images
 \usepackage{natbib} % Required to change bibliography style to APA
 \usepackage{amsmath} % Required for some math elements 
-
+\usepackage{booktabs}
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
 
 \renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
@@ -22,7 +22,7 @@
 %	DOCUMENT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Lab Report of Laser Spectroscopy \\ Demonstration of 1 kHz System} % Title
+\title{Lab Report of TCSPC \\ Influence of Environment on Molecular Process} % Title
 
 \author{Tao \textsc{Li}} % Author name
 
@@ -38,10 +38,112 @@
 %----------------------------------------------------------------------------------------
 
  
+\section{Basic Principle}
+Time-correlated single photon counting allows us to measure the time that a molecule stays in its excited state following excitation. The technique works as follows: a laser pulse hits the sample.  After the molecules in the sample are excited, they can decay back to the ground state via several pathways, such as internal conversion, fluorescence, and intersystem crossing to the triplet state.  The sample goes back to the ground state at a rate at the sum of all the possible decay pathways; the reciprocal of this rate is the excited state lifetime. Even if fluorescence is not the fastest decay pathway, the relaxation is a discrete, probabilistic process.  As a result, there is some Poisson probability of detecting fluorescence photons.  We can detect these photons using a PMT and build up an exponential decay.  Fitting this decay gives us the excited state, or fluorescence, lifetime. \par 
+Set the initial fluorescence time as zero, the fluorescence spectra obeys the following formula:
+\begin{equation}
+I=I_{0}e^{-t/\tau}
+\end{equation}
+Hence the lifetime is easy to be calculated from spectra data.\par 
+Moreover, anistrotropy property of molecule in solution can also be obtained using TCSPC. Anistrotropy r is defined as
+\begin{equation}
+r=\frac{T_{\parallel}-I_{\perp}}{T_{\parallel}+2I_{\perp}}
+\end{equation}
+If the molecules obeys totally random distribution, $r=0.4$. In the spectra of anistrotropy in TCSPC, 
+\begin{equation}
+r(t)=r_{0}e^{-t/\theta}
+\end{equation}
+where $\theta$ represents the rotation correlation time.
+\begin{equation}
+\theta =\frac{\eta V}{RT}
+\end{equation}
+where $\eta$ represents the viscosity of solution. So after obtaining the value of $\theta$ from spectra, the volume of molecule V could be calculated directly.
+
+\section{Setup} 
+Reverse mode.\par 
+Laser $\longrightarrow$ 2 beams$\Rightarrow$.\par 
+Beam 1 $\longrightarrow$ sample $\longrightarrow$ PMT detector $\longrightarrow$ discriminator $\longrightarrow$ stop signal\par 
+Beam 2$\longrightarrow$ CFD $\longrightarrow$DELAY$\longrightarrow$start signal \par 
+$\Rightarrow$ TAC$\longrightarrow$MCA$\longrightarrow$PC
+
+\section{Channel Time Correspondance}
+Firstly, we do experiment on the channel time correspondance. In original data, x axis represents channels, which has a linear correspondace towards time.\par 
+
+\begin{table}[]
+\centering
+\caption{Channel time correspondance data}
+\label{my-label}
+\begin{tabular}{@{}lllllll@{}}
+\toprule
+channels & 238 & 388 & 687 & 990 & 1291 & 1595\\ \midrule
+time/ns  & -6  & -4  & 0   &   4 & 8 & 12\\
+\bottomrule
+\end{tabular}
+\end{table}
+According to data above, we could get the linear equation about channeal and time.
+
+\section{Lifetime of D149}
+
+\section{Anistrotropy of Rhodamine 6G}
+
+
+
+
+
+
+
+
 \section{Questions}
-\section{Brief Description of System}
+1.  Imagine two compounds with similar fluorescence quantum yields (e.g. $\Phi_{fl} = 1$) but very different
+absorption coefficients ($\varepsilon$). Now assume two samples of these with similar absorption (at a given
+wavelength). What would be the difference between their time-resolved fluorescence spectra? Consider
+the total fluorescence and how the fluorescence would be distributed over time.\\ \par 
+
+Since the quantum yields are the same, when 2 samples have similar absorption, the exponential fluorescence spectra have similar integral area. According to 
+\begin{equation}
+A=\log (\frac{I_0}{I})=\varepsilon cl
+\end{equation}
+the larger absorption coefficients $\varepsilon$ means smaller life time $\tau$. To make sure the same integral area, the intial value of I becomes larger and the spectra decreases faster.\\ \par 
 
 
+2.  What is the influence of laser intensity fluctuations (say within ±20\%) on the precision of the
+measurement in a TCSPC life-time experiment? Compare that with an anisotropy measurement and with
+fluorescence upconversion and transient absorption spectroscopy.\\ \par 
+For life-time experiment, 20\% laser intensity flucturations do not influence the result becasue only 1\% intensity is measured for detection rather than the maximum value of the pulse.\par 
+For anisotropy measurement, it influences the experiment results.\\ \par 
 
+3. Discuss the different lifetimes that were obtained during the measurement for the different systems,
+taking into account the environments. \\ \par 
+From the lifetime experiment of D149 in solution state and solid state, we get the following results:
+\begin{center}
+\includegraphics[width=10cm]{result1}
+\end{center}
+Hence the lifetime of D149 in solid state is larger than that in liquid solution, which arises from the solid state restriction of the motion of D149.\\ \par 
 
+4. Estimate the volume of rhodamine 6G in three different ways: a) use the (estimated) density and
+molecular mass and calculate the volume, b) estimate the diameter of the molecule by assuming standard
+bond lengths and calculate the corresponding volume if it was a sphere (how realistic is that model?), c)
+calculate the volume based on the time-resolved data in ethanol.
+Compare the three ways and comment on which you consider most reliable. \\ \par 
+a) 
+\begin{equation*}
+V=\frac{m}{\rho}=\frac{479.02 g/mol}{1.26 g/cm^3\times 6.623\times 10^{23}/mol}=0.574 nm^3
+\end{equation*}
+b) Diameter is about 12 C-C bonds length, which is 0.154 nm.  
+\begin{equation*}
+V=\frac{4\pi r^3}{3}=\frac{4\times 3.14\times 0.077^3}{4}=1.91\times 10^{-3} nm^3
+\end{equation*}
+c)  \\ \par 
+
+5. Based on the SPC data, calculate the rotational correlation time of rhodamine 6G in ethanol and
+ethanol/glycerol. Also, calculate the viscosity of the mixtures and compare to the calculated viscosity
+based on a simple linear interpolation between those of the two pure solvents. \\ \par
+dd\\ \par
+
+6.  Given a new molecule with completely unknown photophysics/-chemistry, suggest a good strategy on
+how to learn about possible processes that the molecule can undergo. Suggest possible techniques (flashphotolysis,
+SPC, pump-probe, upconversion, streak camera, ...), why you use those and what you can
+learn from these and what not (strengths and weaknesses). Keep in mind that practical aspects can be
+quite important in many experiments. \\ \par
+ff\\ \par
 \end{document}
